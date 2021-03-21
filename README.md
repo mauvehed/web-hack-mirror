@@ -42,3 +42,11 @@ Attrition.org previously ran a mail list for announcing these hacks as we find o
 * Beard Mirror (Closed)
 
 Attrition.org would like to thank McIntyre, Punkis, HNN, net-security.org, and the various archives listed for some of the mirrors here. The above listed mirrors consistently contributed to the mirror here in the form of missing mirrors, email warnings of hacked sites, and more. Thanks goes out to the Flashback, Resistance, DutchThreat, and Onething staff in particular. Seed material before we started was most certainly borrowed from some. Without it, this mirror would not be what it is today.
+
+# Timeline
+
+May 21, 2001 Update: The mirror closes, announced via our 'Evolution' article
+
+Aug 18, 2010 Update: The indexes, statistics and support pages will remain available to the public. Actual defacement mirrors will no longer be made available due to the time that has passed. If you believe you have a legitimate need to view them, contact jericho[at]attrition.org and explain your need in detail.
+
+Mar 21, 2021 Update: The mirror has been re-opened for historical purposes.
