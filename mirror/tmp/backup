@@ -1,0 +1,27 @@
+
+$XX  -  country domain
+$TITLE - name of country
+
+echo "<HTML><HEAD><TITLE>Country Breakout - $TITLE</TITLE></HEAD>" > ../$XX.html
+echo "<BODY BGCOLOR=\"#000000\" TEXT=\"#FFFFFF\" LINK=\"#FF0000\" VLINK=\"#C0C0C0\" ALINK=\"#FF0000\"><pre>" >> ../$XX.html
+echo " " >> ../$XX.html
+grep -h .$XX\" /home/web/mirror/attrition/199*.html | sort  >> ../$XX.html
+\${$XX}COUNT=`grep -h .jp\" /home/web/mirror/attrition/199*.html | wc -l`
+echo " " >> ../$XX.html
+echo "Total Defacements: " \${$XX}COUNT >> ../$XX.html
+echo " " >> ../$XX.html
+echo "<!-- HTML and content Copyright 1999 Brian Martin where applicable -->" >> ../$XX.html
+chmod 644 /home/web/mirror/attrition/$XX.html
+
+
+echo "echo \"<HTML><HEAD><TITLE>Country Breakout - $TITLE</TITLE></HEAD>\" > ../$XX.html"
+echo "echo \"<BODY BGCOLOR=\\\"#000000\\\" TEXT=\\\"#FFFFFF\\\" LINK=\\\"#FF0000\\\" VLINK=\\\"#C0C0C0\\\" ALINK=\\\"#FF0000\\\"><pre>\" >> ../$XX.html"
+echo "echo \" \" >> ../$XX.html"
+echo "grep -h .$XX\\\" /home/web/mirror/attrition/199*.html | sort  >> ../$XX.html"
+echo "\${$XX}COUNT=`grep -h .jp\\\" /home/web/mirror/attrition/199*.html | wc -l`"
+echo "echo \" \" >> ../$XX.html"
+echo "echo \"Total Defacements: \" \${$XX}COUNT >> ../$XX.html"
+echo "echo \" \" >> ../$XX.html"
+echo "echo \"<!-- HTML and content Copyright 1999 Brian Martin where applicable -->\" >> ../$XX.html"
+echo "chmod 644 /home/web/mirror/attrition/$XX.html"
+

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# this tool is used to generate a better tool for generating country breakouts
+
+echo -n "country abrv (upper case)? "; read XX
+echo -n "country name? "; read TITLE
+
+echo "echo \"<HTML><HEAD><TITLE>Country Breakout - $TITLE</TITLE></HEAD>\" > ../$XX.html" >> gen2
+echo "echo \"<BODY BGCOLOR=\\\"#000000\\\" TEXT=\\\"#FFFFFF\\\" LINK=\\\"#FF0000\\\" VLINK=\\\"#C0C0C0\\\" ALINK=\\\"#FF0000\\\"><pre>\" >> ../$XX.html" >> gen2
+echo "echo \" \" >> ../$XX.html" >> gen2
+echo "grep -h .$XX\\\" /home/web/mirror/attrition/199*.html | sort  >> ../$XX.html" >> gen2
+echo "($XX)COUNT=\`grep -h .jp\\\" /home/web/mirror/attrition/199*.html | wc -l\`" >> gen2
+echo "echo \" \" >> ../$XX.html" >> gen2
+echo "echo \"Total Defacements: \" \${$XX}COUNT >> ../$XX.html" >> gen2
+echo "echo \" \" >> ../$XX.html" >> gen2
+echo "echo \"<!-- HTML and content Copyright 1999 Brian Martin where applicable -->\" >> ../$XX.html" >> gen2
+echo "chmod 644 /home/web/mirror/attrition/$XX.html" >> gen2
+echo " " >> gen2
+echo " " >> gen2
+

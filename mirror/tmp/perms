@@ -1,0 +1,47 @@
+#!/bin/sh
+echo "Setting perms/ownership of mirror files..."
+cd /home/web/mirror/attrition
+chown -R root.mirror * 2>/dev/null
+find /home/web/mirror/attrition -type f -exec chmod 664 {} \; 2>/dev/null
+find /home/web/mirror/attrition -type d -exec chmod 775 {} \; 2>/dev/null
+cd /home/web/mirror/attrition/tmp/
+chmod 700 gen summary perms country.pl  # webstats.pl countOShacks-new.sh country.sh
+
+echo "Backing up mirror html files (199*html)..."
+cp /home/web/mirror/attrition/199*html /home/web/mirror/attrition/.bak/
+
+echo "Setting perms/ownership of public advisories..."
+cd /home/web/security/advisory
+chown -R root.web *
+find /home/web/security/advisory -type f -exec chmod 644 {} \;
+find /home/web/security/advisory -type d -exec chmod 755 {} \;
+echo "Setting perms/ownership of private advisories..."
+chown -R root.users private/
+find /home/web/security/advisory/private -type f -exec chmod 640 {} \;
+find /home/web/security/advisory/private -type d -exec chmod 750 {} \;
+chmod 700 /home/web/security/advisory/.count
+
+chmod 644 /home/admin/error_log /home/admin/access_log*
+
+# backing up mal's user files
+cp /home/malvu/bot/.mal* /root
+cp /home/malvu/bot/scripts/global* /root
+
+# generate some stats
+echo "Generating mail list stats..."
+cd /usr/local/majordomo/lists
+wc -l defaced defaced-alpha defaced-gm defaced-summary pss fuck fuckpoem | grep -v total | mail -s "mail list subscriber count" staff@attrition.org
+
+# just for fun
+echo "Mailing a few people for good measure..."
+banner "SOCKS" | mail -s SOCKS sarikei
+echo "reminder: write in your journal fuckstick" | mail -s hey punkis
+echo "update the mirror dirty slutbag" | mail -s yo mcintyre
+echo "a scarygirl update would be quite keen" | mail -s hey demonika@demonic.com
+traceroute nafs-heaven.nafs.net &
+traceroute nafs-heaven.nafs.net &
+traceroute nafs-heaven.nafs.net &
+traceroute nafs-heaven.nafs.net &
+
+/usr/bin/logger -p security.info perms - generic system maintenance stuff done
+echo "Done."

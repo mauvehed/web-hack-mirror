@@ -1,0 +1,70 @@
+  368  find . -type f -exec egrep -H -i fuck {} \; >> /home/web/mirror/speech.curse &
+  388  find . -type f -exec egrep -H -i attrition {} \; >>/home/web/mirror/speech.att &
+  394  find . -type f -exec egrep -H -i littleto {} \; >>/home/web/mirror/speech.little &
+  395  find . -type f -exec egrep -H -i serbia {} \; >>/home/web/mirror/speech.serbia &
+   85  find . -type f -exec egrep -H -i hnn {} \; >> /tmp/rog_is_muh_hero &
+   86  find . -type f -exec egrep -H -i hackernew {} \; >> /tmp/rog_is_muh_hero &
+   87  find . -type f -exec egrep -H -i "hacker news net" {} \; >> /tmp/rog_is_muh_hero &
+  434  cat speech.att | cut -f1 -d: | sort -u | grep -v mirror.html | wc -l
+  442  cat speech.curse | cut -f1 -d: | sort -u | wc -l
+  445  cat speech.little | cut -f1 -d: | sort -u | wc -l
+  446  cat speech.serbia | cut -f1 -d: | sort -u | wc -l
+  500  wc -l speech.*
+
+As of 09.01.99:
+The word 'fuck' occured 1269 times in 584 out of 2145 mirrors dating back to 95.06.12. 
+337 defaced pages have linked to or greeted 'attrition', the largest mirror of defacements.
+Shortly after the Columbine shooting, 37 defacements made reference to the incident. (humanity)
+To date, 31 defacements have made reference to Serbia. (politics)
+
+Average number of website defacements per day since 99.01.01: 3.0.
+Average number of website defacements per day since 99.02.01: 2.5.
+Average number of website defacements per day since 99.03.01: 4.0.
+Average number of website defacements per day since 99.04.01: 8.9.
+Average number of website defacements per day since 99.05.01: 12.7.
+Average number of website defacements per day since 99.06.01: 10.4.
+Average number of website defacements per day since 99.07.01: 10.6.
+Average number of website defacements per day since 99.08.01: 10.3.
+
+Total website defacements in 1995: 4
+Total website defacements in 1996: 18
+Total website defacements in 1997: 39
+Total website defacements in 1998: 194
+Total website defacements in 1999: 1905
+
+Since 08.01.99
+ # of BSDi    : 13
+ # of FreeBSD : 9
+ # of HP/UX   : 1
+ # of IRIX    : 11
+ # of Linux   : 71
+ # of OSF1    : 3
+ # of SCO     : 2
+ # of Solaris : 78
+ # of Win-NT  : 109
+
+Since 95.06.12
+com:    1052
+net:     124
+org:     140
+mil:      52
+gov:     121
+
+china:      		38
+czech republic:      	31
+israel:      		53
+mexico:      		68
+russia:      		47
+united kingdom: 	38
+
+
+full country stats
+how many domains viewed their own hacked mirror
+web server
+sites that listed how they exploited it
+that left contact info
+groups that stick with a single OS
+
+
+awk 'FS=""; /\[[0-9]/ && ( $57 ~ /K/ || $58 ~ /K/ || $59 ~ /K/ || $60 ~ /K/ ) { print }' 199*.html | wc -l
+
