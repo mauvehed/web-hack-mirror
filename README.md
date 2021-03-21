@@ -18,7 +18,9 @@ March 20, 2021, an argument was made to open it back up to everyone. While we ha
 
 WARNING: Some of the mirrors may cause primitive anti-malware software, like Defender on Windows 10, to throw an alert. To the best of our knowledge there is no truly malicious content on these pages, but you are warned that we cannot guarantee it 100%. If you do analysis and determine something to be malicious, please let us know! If it is just crummy AV software whining, don't bother sending us a screenshot.
 
-Want a copy of the entire defacement mirror? Please visit our [GitHub project](https://github.com/attrition-org/web-hack-mirror/) we set up that has a complete copy of all of the defacements. You can clone a copy or download a zip from there rather than scraping this site, which we will likey block if we see.
+Want a copy of the entire defacement mirror? Please visit our [GitHub project](https://github.com/attrition-org/web-hack-mirror/) we set up that has a complete copy of all of the defacements. You can clone a copy or download a zip from there rather than scraping this site, which we will likey block if we see. The data is being released under the
+Creative Commons Attribution-NonCommercial-ShareAlike [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license which allows you to use and modify it,
+but not for commercial gain and you must release your work under the same license.
 
 # Attrition.org Mirror
 
