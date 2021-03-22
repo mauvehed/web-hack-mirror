@@ -1,4 +1,4 @@
-# ATTRITION Web Page Hack Mirror
+# [ATTRITION Web Page Hack Mirror](https://attrition.org/mirror/attrition/)
 
 In January, 1999, the attrition.org staff at the time decided to create a mirror for defaced web pages. A web defacement happens when the content of a public web page is altered by someone other than the legitimate person or company responsible for the content. In simple terms, if someone types a URL into their browser and sees anything but the legitimate page, that is a web defacement. At the time, these were sometimes significant events carried out as a form of digital protest or "[hacktivism](https://en.wikipedia.org/wiki/Hacktivism)". Other times they were simple "digital vandalism", essentially graffiti that was a nuisance at best.
 
@@ -24,7 +24,7 @@ Want a copy of the entire defacement mirror? Please visit our [GitHub project](h
 Creative Commons Attribution-NonCommercial-ShareAlike [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license which allows you to use and modify it,
 but not for commercial gain and you must release your work under the same license.
 
-# Attrition.org Mirror
+# [Attrition.org Mirror](https://attrition.org/mirror/attrition/)
 
 Formerly maintained by: jericho, null, and munge
 
